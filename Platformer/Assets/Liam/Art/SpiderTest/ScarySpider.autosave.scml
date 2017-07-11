@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="r10">
+    <folder id="0">
+        <file id="0" name="SpiderBody.png" width="536" height="440" pivot_x="0.391791" pivot_y="0.6"/>
+        <file id="1" name="SpiderLegs.png" width="536" height="440" pivot_x="0.514925" pivot_y="0.659091"/>
+    </folder>
+    <entity id="0" name="Scary Spider">
+        <animation id="0" name="Stand" length="1000" interval="100">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="0" z_index="1"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="SpiderBody">
+                <key id="0" spin="0">
+                    <object folder="0" file="0" x="-25" y="210"/>
+                </key>
+            </timeline>
+            <timeline id="1" name="SpiderLegs">
+                <key id="0" spin="0">
+                    <object folder="0" file="1" x="66" y="148"/>
+                </key>
+            </timeline>
+        </animation>
+        <animation id="1" name="Jump" length="1000" interval="100">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="0" z_index="1"/>
+                </key>
+                <key id="1" time="398">
+                    <object_ref id="0" timeline="0" key="1" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="1" z_index="1"/>
+                </key>
+                <key id="2" time="501">
+                    <object_ref id="0" timeline="0" key="2" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="2" z_index="1"/>
+                </key>
+                <key id="3" time="529">
+                    <object_ref id="0" timeline="0" key="3" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="3" z_index="1"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="SpiderBody">
+                <key id="0" spin="0">
+                    <object folder="0" file="0" x="-25" y="210"/>
+                </key>
+                <key id="1" time="398" spin="0">
+                    <object folder="0" file="0" x="-25" y="171"/>
+                </key>
+                <key id="2" time="501" spin="0">
+                    <object folder="0" file="0" x="-25" y="210"/>
+                </key>
+                <key id="3" time="529" spin="0">
+                    <object folder="0" file="0" x="-25" y="205.766073" scale_y="1.047841"/>
+                </key>
+            </timeline>
+            <timeline id="1" name="SpiderLegs">
+                <key id="0" spin="0">
+                    <object folder="0" file="1" x="66" y="148"/>
+                </key>
+                <key id="1" time="398" spin="0">
+                    <object folder="0" file="1" x="66" y="109" scale_y="0.709122"/>
+                </key>
+                <key id="2" time="501" spin="0">
+                    <object folder="0" file="1" x="66" y="148"/>
+                </key>
+                <key id="3" time="529" spin="0">
+                    <object folder="0" file="1" x="66" y="140.799931" scale_y="1.047841"/>
+                </key>
+            </timeline>
+        </animation>
+    </entity>
+</spriter_data>
