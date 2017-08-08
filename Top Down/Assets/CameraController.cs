@@ -13,6 +13,9 @@ public class CameraController : MonoBehaviour {
 
     void LateUpdate()
     {
+        if (Player == null)
+            return;
+
 
         Vector3 startPos = transform.position;
 
